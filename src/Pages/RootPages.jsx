@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Home from "../Components/Home";
 import Feature from "../Components/Feature";
+import Resume from "../Components/Resume";
+import MyBlogs from "../Components/MyBlogs";
 
 const RootPages = () => {
   return (
@@ -9,6 +11,8 @@ const RootPages = () => {
           <Navbar></Navbar>
       <Home></Home>
       <Feature></Feature>
+      <Resume></Resume>
+      <MyBlogs></MyBlogs>
     </div>
   );
 };

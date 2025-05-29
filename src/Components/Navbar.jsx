@@ -12,14 +12,14 @@ const Navbar = () => {
 
           <div>
             <ul className="hidden lg:flex space-x-6 text-sm">
-              <li className="hover:text-green-400 cursor-pointer">Home</li>
-              <li className="hover:text-green-400 cursor-pointer">Feature</li>
-              <li className="hover:text-green-400 cursor-pointer">Resume</li>
-              <li className="hover:text-green-400 cursor-pointer">Works</li>
-              <li className="hover:text-green-400 cursor-pointer">Blog</li>
-              <li className="hover:text-green-400 cursor-pointer">Contacts</li>
-              <li className="hover:text-green-400 cursor-pointer">Shop</li>
-              <li className="hover:text-green-400 cursor-pointer">
+              <li className="hover:text-green-500 cursor-pointer">Home</li>
+              <li className="hover:text-green-500 cursor-pointer">Feature</li>
+              <li className="hover:text-green-500 cursor-pointer">Resume</li>
+              <li className="hover:text-green-500 cursor-pointer">Works</li>
+              <li className="hover:text-green-500 cursor-pointer">Blog</li>
+              <li className="hover:text-green-500 cursor-pointer">Contacts</li>
+              <li className="hover:text-green-500 cursor-pointer">Shop</li>
+              <li className="hover:text-green-500 cursor-pointer">
                 Light Version
               </li>
             </ul>
