@@ -55,10 +55,7 @@ const Home = () => {
           {/* Image Section */}
           <div className="relative w-[594px] h-[535px] md:w-[794px] md:h-[735px] overflow-hidden">
             <div className="absolute inset-0 transform -rotate-6 clip-custom">
-              <div
-                className="w-full h-full bg-[url('../../src/assets/riat-removebg-preview-EDIT-Picsart-AiImageEnhancer.jpg')] bg-no-repeat bg-center bg-cover"
-               
-              ></div>
+              <div className="w-full h-full bg-[url('https://i.ibb.co/8gF60LMm/android-chrome-512x512.png')] bg-no-repeat bg-center bg-cover"></div>
             </div>
           </div>
 
