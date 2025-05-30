@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router';
-import Education from './TimeLine';
+import React from "react";
+import { Link, NavLink } from "react-router";
+import Education from "./TimeLine";
 
 const Resume = () => (
-  <div className="mb-28">
+  <div className="mb-28 ">
     {/* title div */}
     <div className="text-center my-12">
       <small className="text-green-500">2+ years of Experience</small>

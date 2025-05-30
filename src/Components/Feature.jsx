@@ -1,4 +1,3 @@
-
 import { FaCode, FaMobileScreenButton } from "react-icons/fa6";
 import { FiMousePointer } from "react-icons/fi";
 import { GrUpdate } from "react-icons/gr";
@@ -9,11 +8,9 @@ import { RiAppsLine, RiPagesFill } from "react-icons/ri";
 import { RxText } from "react-icons/rx";
 import { TbEaseInOutControlPoints } from "react-icons/tb";
 
-
-
 const Feature = () => {
   return (
-    <div className="my-28">
+    <div className="my-28 ">
       <div className="text-center">
         {" "}
         <small className="text-green-500">My InBio Feature</small>

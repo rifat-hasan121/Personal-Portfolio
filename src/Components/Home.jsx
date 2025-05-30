@@ -7,6 +7,7 @@ import {
   FaInstagram,
   FaXTwitter,
 } from "react-icons/fa6";
+import FuzzyOverlayExample from "./FuzzyOverlayExample";
 
 // Custom Typewriter component
 const TypewriterWithColoredLastWord = ({ words, ...options }) => {
@@ -43,7 +44,7 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center px-4 md:px-8 relative">
+    <div className="min-h-screen flex flex-col justify-center px-4 md:px-8 relative ">
       {/* Grid layout with image and text */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-end justify-center overflow-hidden mb-8">
         {/* Image Section */}
@@ -54,7 +55,8 @@ const Home = () => {
         </div>
 
         {/* Text Section */}
-        <div className="max-w-xl">
+        <div className="max-w-xl space-y-20">
+          <FuzzyOverlayExample></FuzzyOverlayExample>
           <h1 className="text-xl font-semibold leading-snug">
             Hello, I’m <span className="text-green-500">Rifat Hasan</span>,
             Front-end Developer Based in Bangladesh.
