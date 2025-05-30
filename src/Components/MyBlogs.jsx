@@ -38,7 +38,7 @@ const MyBlogs = () => {
             </div>
           </Link>
 
-          <Link to="/development">
+          <Link to="/quote">
             <div className="max-w-sm mx-auto bg-gray-900 text-white rounded-2xl shadow-lg pb-12 overflow-hidden transition hover:shadow-xl hover:text-green-500">
               <img
                 src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/09/pretty-curly-young-woman-writing-notes-startup-project-340x250.jpg"
@@ -61,7 +61,7 @@ const MyBlogs = () => {
             </div>
           </Link>
 
-          <Link to="/development">
+          <Link to="/technician">
             <div className="max-w-sm mx-auto bg-gray-900 text-white rounded-2xl shadow-lg pb-12 overflow-hidden transition hover:shadow-xl hover:text-green-500">
               <img
                 src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/09/road-sign-direction-perforated-paper-arrow-340x250.jpg"

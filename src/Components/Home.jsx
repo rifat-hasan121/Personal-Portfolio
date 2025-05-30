@@ -8,6 +8,7 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import FuzzyOverlayExample from "./FuzzyOverlayExample";
+import CustomCursor from "./CustomCursor";
 
 // Custom Typewriter component
 const TypewriterWithColoredLastWord = ({ words, ...options }) => {
@@ -43,34 +44,39 @@ const Home = () => {
     delaySpeed: 1000,
   };
 
+  
+
   return (
-    <div className="min-h-screen flex flex-col justify-center px-4 md:px-8 relative ">
-      {/* Grid layout with image and text */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-end justify-center overflow-hidden mb-8">
-        {/* Image Section */}
-        <div className="relative w-[594px] h-[535px] md:w-[794px] md:h-[735px] overflow-hidden">
-          <div className="absolute inset-0 transform -rotate-6 clip-custom">
-            <div className="w-full h-full bg-[url('https://cvio.bslthemes.com/wp-content/uploads/2020/01/man-800x720.jpg')] bg-no-repeat bg-center bg-cover"></div>
+    <div className="min-h-screen flex flex-col justify-center px-4 md:px-8 relative">
+      <CustomCursor></CustomCursor>
+      <div>
+        {/* Grid layout with image and text */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-end justify-center overflow-hidden mb-8 -z-50">
+          {/* Image Section */}
+          <div className="relative w-[594px] h-[535px] md:w-[794px] md:h-[735px] overflow-hidden">
+            <div className="absolute inset-0 transform -rotate-6 clip-custom">
+              <div className="w-full h-full bg-[url('https://cvio.bslthemes.com/wp-content/uploads/2020/01/man-800x720.jpg')] bg-no-repeat bg-center bg-cover"></div>
+            </div>
+          </div>
+
+          {/* Text Section */}
+          <div className="max-w-xl space-y-20">
+            <FuzzyOverlayExample></FuzzyOverlayExample>
+            <h1 className="text-xl font-semibold leading-snug">
+              Hello, I’m <span className="text-green-500">Rifat Hasan</span>,
+              Front-end Developer Based in Bangladesh.
+            </h1>
           </div>
         </div>
 
-        {/* Text Section */}
-        <div className="max-w-xl space-y-20">
-          <FuzzyOverlayExample></FuzzyOverlayExample>
-          <h1 className="text-xl font-semibold leading-snug">
-            Hello, I’m <span className="text-green-500">Rifat Hasan</span>,
-            Front-end Developer Based in Bangladesh.
-          </h1>
+        {/* Contact Info & Typewriter */}
+        <div className="flex flex-wrap gap-4 sm:gap-8 md:gap-32 items-center -z-50">
+          <p className="text-[14px] w-fit text-center md:text-left">
+            E: rifathasannetrakona@gmail.com <br />
+            T: +8801602944969
+          </p>
+          <TypewriterWithColoredLastWord {...typewriter} />
         </div>
-      </div>
-
-      {/* Contact Info & Typewriter */}
-      <div className="flex flex-wrap gap-4 sm:gap-8 md:gap-32 items-center">
-        <p className="text-[14px] w-fit text-center md:text-left">
-          E: rifathasannetrakona@gmail.com <br />
-          T: +8801602944969
-        </p>
-        <TypewriterWithColoredLastWord {...typewriter} />
       </div>
 
       {/* Fixed Social Bar (only appears on this component) */}

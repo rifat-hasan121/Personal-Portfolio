@@ -33,11 +33,14 @@ const ContactCard = () => {
       <div className=" w-full grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Profile Section */}
         <div className="bg-gray-900 rounded-xl p-6 shadow-lg flex flex-col items-center text-center md:items-start md:text-left">
-          <img
-            src="https://i.ibb.co/hxWDTvVQ/DSC-0194-EDIT-1.jpg"
-            alt="Profile"
-            className="rounded-md mb-4"
-          />
+        
+            
+            <img
+              src="https://i.ibb.co/hxWDTvVQ/DSC-0194-EDIT-1.jpg"
+              alt="Profile"
+              className="rounded-md mb-4"
+            />
+          
           <h2 className="text-white text-2xl font-bold">
             Rifat <span className="text-green-500">Hasan</span>
           </h2>

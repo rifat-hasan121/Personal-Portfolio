@@ -1,9 +1,10 @@
 import React from 'react';
-import { FcFlashAuto } from 'react-icons/fc';
-import { MdCancel } from 'react-icons/md';
-import { Link } from 'react-router';
+import { FcFlashAuto } from "react-icons/fc";
+import { MdCancel } from "react-icons/md";
+import { Link } from "react-router";
 
-const Development = () => {
+
+const Quote = () => {
     return (
       <div className="w-2xl mx-auto pb-8 my-12 bg-gray-950 p-4 rounded-sm shadow-2xl shadow-gray-800">
         <div className="flex justify-end items-center gap-4 mb-8">
@@ -17,15 +18,15 @@ const Development = () => {
         <div className="flex flex-col justify-center items-center">
           <img
             className="rounded-sm"
-            src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/09/marketing-young-cute-business-lady-striped-shirt-office-showing-raising-results-1-800x450.jpg"
+            src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/09/pretty-curly-young-woman-writing-notes-startup-project-800x450.jpg"
             alt=""
           />
         </div>
         <small className="text-[12px] text-gray-400 my-4">
-          August 17, 2025
+          May 17, 2025
         </small>
         <h3 className="text-2xl font-semibold mb-6">
-          The Best Ways to Do Market Research For Your Business Plan.
+          The Easiest Way to Become a Successful Writer and Authors.
         </h3>
         <p className="text-[18px] text-gray-700 mb-6">
           There are many variations of passages of Lorem Ipsum available, but
@@ -124,4 +125,4 @@ const Development = () => {
     );
 };
 
-export default Development;
+export default Quote;

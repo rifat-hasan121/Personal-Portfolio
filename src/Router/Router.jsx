@@ -2,6 +2,8 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import RootPages from "../Pages/RootPages";
 import Development from "../Pages/Development";
+import Quote from "../Pages/Quote";
+import Technician from "../Pages/Technician";
 
 const router = createBrowserRouter([
   {
@@ -10,7 +12,17 @@ const router = createBrowserRouter([
   },
   {
     path: "/development",
-    Component:Development,
+    Component: Development,
+  },
+
+  {
+    path: "/quote",
+    Component: Quote,
+  },
+
+  {
+    path: "/technician",
+    Component: Technician,
   },
 ]);
 

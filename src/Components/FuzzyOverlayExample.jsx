@@ -41,7 +41,7 @@ const FuzzyOverlay = () => {
 const ExampleContent = () => {
   return (
     <div className="relative grid rounded-sm place-content-center space-y-6 bg-neutral-950 p-8">
-      <p className="text-center text-6xl font-black text-neutral-50">
+      <p className="text-center text-2xl sm:text-3xl md:text-6xl font-black text-neutral-50">
        Welcome to my Portfolio
       </p>
       <p className="text-center text-neutral-400">
@@ -51,7 +51,7 @@ const ExampleContent = () => {
         <button className="text-neutral-20 w-fit px-4 py-2 font-semibold text-neutral-200 transition-colors hover:bg-neutral-800">
           Projects
         </button>
-        <button className="w-fit flex items-center gap-2 bg-green-500 px-4 py-2 font-semibold text-neutral-700 transition-colors hover:bg-green-300">
+        <button className="w-fit flex items-center gap-2 bg-green-500 md:px-4 md:py-2 md:font-semibold text-neutral-700 transition-colors hover:bg-green-300">
           <h2>Download My CV</h2>
           <MdOutlineFileDownload size={28}/>
         </button>
