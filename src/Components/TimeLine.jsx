@@ -12,11 +12,11 @@ const Education = () => {
           <ul class="list-none m-0 p-0">
             <li class="mb-5  ">
               <div class="flex group items-center ">
-                <div class="bg-gray-800 group-hover:bg-green-500 z-10 rounded-full border-4 border-black  h-5 w-5">
+                <div class="bg-gray-900 group-hover:bg-green-500 z-10 rounded-full border-4 border-black  h-5 w-5">
                   <div class="bg-black h-1 w-6 items-center  ml-4 mt-1"></div>
                 </div>
                 <div class="flex-1 ml-4 z-10 font-medium">
-                  <div class="order-1 space-y-2 bg-gray-800 rounded-lg shadow-only transition-ease lg:w-5/12 px-6 py-4">
+                  <div class="order-1 space-y-2 bg-gray-900 rounded-lg shadow-only transition-ease lg:w-5/12 px-6 py-4">
                     <div className="flex justify-between gap-4 items-center">
                       <div>
                         <h3 class="mb-3 font-bold text-white text-2xl">
@@ -44,11 +44,11 @@ const Education = () => {
             </li>
             <li class="mb-5  ">
               <div class="flex group items-center ">
-                <div class="bg-gray-800 group-hover:bg-green-500 z-10 rounded-full border-4 border-black  h-5 w-5">
+                <div class="bg-gray-900 group-hover:bg-green-500 z-10 rounded-full border-4 border-black  h-5 w-5">
                   <div class="bg-black h-1 w-6 items-center  ml-4 mt-1"></div>
                 </div>
                 <div class="flex-1 ml-4 z-10 font-medium">
-                  <div class="order-1 space-y-2 bg-gray-800 rounded-lg shadow-only transition-ease lg:w-5/12 px-6 py-4">
+                  <div class="order-1 space-y-2 bg-gray-900 rounded-lg shadow-only transition-ease lg:w-5/12 px-6 py-4">
                     <h3 class="mb-3 font-bold text-white text-2xl">
                       Diploma in Engineering (CST)
                     </h3>

@@ -8,7 +8,7 @@ const MyBlogs = () => {
       <div className="mb-28">
         <div className="text-center my-12">
           <small className="text-green-500">
-            Visit my blog and keep your feedback
+            VISIT MY BLOG AND KEEP YOUR FEEDBACkK
           </small>
           <h3 className="text-2xl sm:text-3xl md:text-6xl font-bold">
             My <span className="text-green-500">Blog</span>

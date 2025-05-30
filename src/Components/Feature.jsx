@@ -13,7 +13,7 @@ const Feature = () => {
     <div className="my-28 ">
       <div className="text-center">
         {" "}
-        <small className="text-green-500">My InBio Feature</small>
+        <small className="text-green-500">MY INBIO FEATURE</small>
         <h3 className="text-2xl sm:text-3xl md:text-6xl font-bold">
           Awesome <span className="text-green-500">Feature</span>
         </h3>

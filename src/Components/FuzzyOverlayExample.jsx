@@ -52,7 +52,7 @@ const ExampleContent = () => {
           Projects
         </button>
         <button className="w-fit flex items-center gap-2 bg-green-500 md:px-4 md:py-2 md:font-semibold text-neutral-700 transition-colors hover:bg-green-300">
-          <h2>Download My CV</h2>
+          <h2>My Resume</h2>
           <MdOutlineFileDownload size={28}/>
         </button>
       </div>

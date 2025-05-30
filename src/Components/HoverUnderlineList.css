@@ -23,4 +23,6 @@
 
 .hover-underline:hover::after {
   width: 100%;
+  transform: scaleX(1);
+  transform-origin: left;
 }
