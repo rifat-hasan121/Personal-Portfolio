@@ -33,7 +33,7 @@ const ScrollToTopButton = () => {
       }`}
       aria-label="Scroll to top"
     >
-      <FaArrowUp className="text-xl" />
+      <FaArrowUp size={27} className="text-xl" />
     </button>
   );
 };

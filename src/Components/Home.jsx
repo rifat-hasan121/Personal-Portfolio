@@ -51,9 +51,9 @@ const Home = () => {
       <CustomCursor></CustomCursor>
       <div>
         {/* Grid layout with image and text */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-end justify-center overflow-hidden mb-8 -z-50">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-end justify-center overflow-hidden mb-8 -z-50">
           {/* Image Section */}
-          <div className="relative w-[594px] h-[535px] md:w-[794px] md:h-[735px] overflow-hidden">
+          <div className="relative w-[360px] h-[500px] md:w-[620px] md:h-[602px] lg:w-[794px] lg:h-[735px] overflow-hidden">
             <div className="absolute inset-0 transform -rotate-6 clip-custom">
               <div className="w-full h-full bg-[url('https://i.ibb.co/8gF60LMm/android-chrome-512x512.png')] bg-no-repeat bg-center bg-cover"></div>
             </div>
