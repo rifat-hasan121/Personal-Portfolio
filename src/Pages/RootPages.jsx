@@ -9,6 +9,7 @@ import ContactCard from "../Components/ContactCard";
 import ScrollToTopButton from "../Components/ScrollToTopButton";
 import ClickSoundToggle from "../Components/ClickSoundToggle";
 import clickSoundFile from "../assets/click.mp3"; // 
+import AboutMe from "../Components/AboutMe";
 
 const RootPages = () => {
   const heroRef = useRef(null);
@@ -50,6 +51,9 @@ const RootPages = () => {
       />
       <div ref={heroRef}>
         <Home />
+      </div>
+      <div ref={heroRef}>
+        <AboutMe />
       </div>
       <div ref={featureRef}>
         <Feature />

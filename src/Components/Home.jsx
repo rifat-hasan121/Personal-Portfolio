@@ -10,13 +10,11 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import {
-  Github,
-  Linkedin,
-  Mail,
+  
+  
+  
   Download,
   ChevronDown,
-  Code2,
-  Target,
 } from "lucide-react";
 import { BsGithub } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
@@ -169,7 +167,7 @@ const Home = () => {
                   whileTap={{ scale: 0.9 }}
                   className="p-4 rounded-2xl glass-card bg-[rgba(255, 235, 243, 0.02)] hover:bg-[#00c951]/10 transition-all duration-300 group card-hover"
                 >
-                  <BsGithub size={38} style={{ color: "#00c951" }} />
+                  <BsGithub size={35} style={{ color: "#00c951" }} />
                 </motion.a>
 
                 <motion.a
@@ -179,7 +177,7 @@ const Home = () => {
                   whileTap={{ scale: 0.9 }}
                   className="p-4 rounded-2xl glass-card bg-[rgba(255, 235, 243, 0.02)] hover:bg-[#00c951]/10 transition-all duration-300 group card-hover"
                 >
-                  <FaLinkedin size={38} style={{ color: "#00c951" }} />
+                  <FaLinkedin size={35} style={{ color: "#00c951" }} />
                 </motion.a>
 
                 <motion.a
@@ -188,7 +186,7 @@ const Home = () => {
                   whileTap={{ scale: 0.9 }}
                   className="p-4 rounded-2xl glass-card bg-[rgba(255, 235, 243, 0.02)] hover:bg-[#00c951]/10 transition-all duration-300 group card-hover"
                 >
-                  <IoMdMailUnread size={38} style={{ color: "#00c951" }} />
+                  <IoMdMailUnread size={35} style={{ color: "#00c951" }} />
                 </motion.a>
               </motion.div>
               {/* CTA Buttons with enhanced styling */}
@@ -267,7 +265,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 2, duration: 0.8 }}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden md:block"
           >
             <motion.div
               animate={{ y: [0, 12, 0] }}
