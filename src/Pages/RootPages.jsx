@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Home from "../Components/Home";
 import Feature from "../Components/Feature";
@@ -10,6 +10,7 @@ import ScrollToTopButton from "../Components/ScrollToTopButton";
 import ClickSoundToggle from "../Components/ClickSoundToggle";
 import clickSoundFile from "../assets/click.mp3"; // 
 import AboutMe from "../Components/AboutMe";
+import LoadingSpinner from "../Components/LoadingSpinner";
 
 const RootPages = () => {
   const heroRef = useRef(null);
@@ -18,6 +19,8 @@ const RootPages = () => {
   const resumeRef = useRef(null);
   const blogsRef = useRef(null);
   const contactRef = useRef(null);
+  const [isLoading, setIsloading] = useState(true);
+
 
   // ✅ সাউন্ড অন/অফ করার state
   const [soundEnabled, setSoundEnabled] = useState(true);
@@ -37,9 +40,20 @@ const RootPages = () => {
     section.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsloading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="w-11/12 mx-auto">
-      <Navbar
+    <div className="w-11/12 mx-auto min-h-screen">
+      {isLoading ? (<LoadingSpinner></LoadingSpinner>) : (
+        <>
+        <Navbar
         onScrollTo={(sectionName) => {
           if (sectionName === "hero") scrollToSection(heroRef);
           else if (sectionName === "feature") scrollToSection(featureRef);
@@ -72,6 +86,8 @@ const RootPages = () => {
       </div>
       <ClickSoundToggle onToggle={setSoundEnabled} />
       <ScrollToTopButton />
+        </>
+      )};
     </div>
   );
 };
