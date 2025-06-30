@@ -49,6 +49,9 @@
 .active{
     color: #00c951;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 @keyframes float {
     0%, 100% { transform: translateY(0px) rotate(0deg); }
