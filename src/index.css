@@ -1,8 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
 
 
+
+
+:root {
+    --text: #ffebf3;
+    --primary: #00c951;
+    --secondary: #188744;
+    --accent: #0d592b;
+  }
+
+.text-primary{
+    color: #00c951;
+  }
+  body {
+    background: var(--background);
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  .glass-effect {
+    background: rgba(255, 235, 243, 0.03);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 235, 243, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  .glass-card {
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 235, 243, 0.06);
+    box-shadow: 
+      0 4px 16px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 235, 243, 0.1);
+    
+  }
+  .gradient-text {
+    background: linear-gradient(135deg, var(--text) 0%, var(--primary) 50%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% 200%;
+    animation: gradient-shift 4s ease-in-out infinite;
+  }
 .active{
     color: #00c951;
 }
 
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-15px) rotate(1deg); }
+    50% { transform: translateY(-25px) rotate(0deg); }
+    75% { transform: translateY(-10px) rotate(-1deg); }
+  }
+  
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+  .gradient-border {
+    position: relative;
+    background: var(--background);
+    border-radius: 16px;
+  }
+  
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+    border-radius: inherit;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+  }
+  
+  @keyframes glow {
+    from { 
+      box-shadow: 0 0 20px #0d592b;
+      filter: brightness(1);
+    }
+    to { 
+      box-shadow: 0 0 30px #03a042, 0 0 60px #12502b;
+      filter: brightness(1.1);
+    }
+  }
