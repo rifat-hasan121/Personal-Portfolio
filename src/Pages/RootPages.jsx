@@ -75,9 +75,6 @@ const RootPages = () => {
       <div ref={servicesRef}>
         <MyProjects />
       </div>
-      <div ref={resumeRef}>
-        <Resume />
-      </div>
       <div ref={blogsRef}>
         <MyBlogs />
       </div>

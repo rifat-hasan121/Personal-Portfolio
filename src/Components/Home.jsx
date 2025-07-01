@@ -27,42 +27,10 @@ import { BiLogoGmail } from "react-icons/bi";
 import { MdPhone } from "react-icons/md";
 import CanvasCursor from "./CanvasCursor";
 
-// Custom Typewriter component
-// const TypewriterWithColoredLastWord = ({ words, ...options }) => {
-//   const [text] = useTypewriter({
-//     words,
-//     ...options,
-//   });
 
-  
- 
-
-//   const wordsArray = text.split(" ");
-//   const lastWord = wordsArray.pop();
-//   const remainingText = wordsArray.join(" ");
-
-//   return (
-//     <h1 className="text-center text-3xl sm:text-4xl md:text-6xl font-bold">
-//       {remainingText && <span>{remainingText} </span>}
-//       <span className="text-green-500">{lastWord}</span>
-//       <Cursor />
-//     </h1>
-//   );
-// };
 
 const Home = () => {
-  const typewriter = {
-    words: [
-      "I am a Frontend Developer.",
-      "I Code Cool Website!",
-      "I Love Codding!",
-    ],
-    loop: true,
-    cursor: true,
-    typeSpeed: 70,
-    deleteSpeed: 50,
-    delaySpeed: 1000,
-  };
+
 
 
   return (
@@ -74,19 +42,19 @@ const Home = () => {
         {/* Grid layout with image and text */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center overflow-hidden mb-8 -z-50">
           {/* Image Section */}
-          <div className="relative w-[360px] h-[500px] md:w-[620px] md:h-[602px] lg:w-[794px] lg:h-[735px] overflow-hidden">
-            <div className="absolute inset-0 transform -rotate-6 clip-custom">
-              <div className="w-full h-full bg-[url('https://i.ibb.co/8gF60LMm/android-chrome-512x512.png')] bg-no-repeat bg-center bg-cover"></div>
+          <motion.div
+            initial={{ opacity: 0, x: 50, filter: "blur(8px)" }}
+            animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+            transition={{ duration: 1, delay: 0.6 }}
+            className="relative w-[360px] h-[500px] md:w-[620px] md:h-[602px] lg:w-[794px] lg:h-[735px] overflow-hidden"
+          >
+            <div className="absolute  bg-[#161b21] inset-0 transform -rotate-6 clip-custom">
+              <div className="w-full h-full bg-[url('https://i.ibb.co/jv6KpKCN/riat-removebg-preview-removebg-preview-Picsart-Ai-Image-Enhancer.png')] bg-no-repeat bg-center bg-cover"></div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Text Section */}
           <div className="max-w-xl space-y-10">
-            {/* <FuzzyOverlayExample></FuzzyOverlayExample> */}
-            {/* <h1 className="text-xl font-semibold leading-snug">
-              Hello, I’m <span className="text-green-500">Rifat Hasan</span>,
-              Front-end Developer Based in Bangladesh.
-            </h1> */}
             <motion.p
               className="text-lg font-mono text-green-500 font-medium tracking-wide"
               initial={{ opacity: 0 }}
@@ -100,8 +68,8 @@ const Home = () => {
               <h1 className="text-5xl lg:text-7xl font-display font-bold leading-tight">
                 <span className="gradient-text">Hi, I'm</span>
               </h1>
-              <h1 className="text-6xl lg:text-8xl font-display font-bold leading-tight text-[#ffebf3]">
-                Rifat <span className="text-green-900">Hasan</span>
+              <h1 className="text-6xl lg:text-8xl font-display font-bold leading-tight gradient-text ">
+                Rifat <span className="">Hasan</span>
               </h1>
               {/* Animated role with blur effect */}
               <motion.div

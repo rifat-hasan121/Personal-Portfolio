@@ -5,12 +5,12 @@ import { Link } from 'react-router';
 
 const MyBlogs = () => {
     return (
-      <div className="mb-28">
+      <div className="mb-32">
         <div className="text-center my-12">
           <small className="text-green-500">
             VISIT MY BLOG AND KEEP YOUR FEEDBACkK
           </small>
-          <h3 className="text-2xl sm:text-3xl md:text-6xl font-bold">
+          <h3 className="text-2xl sm:text-3xl md:text-6xl gradient-text font-bold mb-4">
             My <span className="text-green-500">Blog</span>
           </h3>
         </div>

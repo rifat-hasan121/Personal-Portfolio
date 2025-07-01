@@ -34,12 +34,12 @@ const ContactCard = () => {
             );
     }
   return (
-    <div className="mt-28">
+    <div className="mt-32">
       <div className="text-center mb-12">
         {" "}
         <small className="text-green-500">CONTACT</small>
-        <h3 className="text-2xl sm:text-3xl md:text-6xl font-bold">
-          Contact With <span className="text-green-500">Me</span>
+        <h3 className="text-2xl sm:text-3xl md:text-6xl gradient-text font-bold mb-4">
+          Contact With <span className="">Me</span>
         </h3>
       </div>
       <div className="min-h-scree flex items-center justify-center p-4">
@@ -52,8 +52,8 @@ const ContactCard = () => {
               className="rounded-md mb-4"
             />
 
-            <h2 className="text-white text-2xl font-bold">
-              Rifat <span className="text-green-500">Hasan</span>
+            <h2 className="text-white gradient-text text-2xl font-bold">
+              Rifat <span className="">Hasan</span>
             </h2>
             <p className="text-gray-400 text-sm mb-2">Frontend Developer</p>
             <p className="text-gray-300 text-sm mb-4">
@@ -61,11 +61,15 @@ const ContactCard = () => {
               to my account.
             </p>
             <p className="text-sm text-gray-400">
-              <strong className="text-white">Phone:</strong> +880 1602944969
+              <strong className="text-white">Phone:</strong>{" "}
+              <a href="tel:+8801602944969">+880 1602944969</a>
             </p>
             <p className="text-sm text-gray-400 mb-4">
               <strong className="text-white">Email:</strong>{" "}
-              rifathasannetrakona@gmail.com
+              <a href="mailto: rifathasannetrakona@gmail.com" target="_blank">
+                {" "}
+                rifathasannetrakona@gmail.com
+              </a>
             </p>
             <p className="text-sm text-gray-400 mb-2">FIND WITH ME</p>
             <div className="flex gap-4">
@@ -99,7 +103,7 @@ const ContactCard = () => {
             <form
               ref={formRef}
               onSubmit={sendEmail}
-              className="grid grid-cols-1 md:grid-cols-2 gap-4"
+              className="grid grid-cols-1 md:grid-cols-2 gap-4 "
             >
               <div className="flex flex-col">
                 <label className="text-sm text-gray-400 mb-1">Your Name</label>
@@ -154,7 +158,6 @@ const ContactCard = () => {
                 </button>
               </div>
             </form>
-            
           </div>
         </div>
       </div>

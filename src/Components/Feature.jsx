@@ -10,12 +10,12 @@ import { TbEaseInOutControlPoints } from "react-icons/tb";
 
 const Feature = () => {
   return (
-    <div className="my-28 ">
+    <div className="py-32">
       <div className="text-center">
         {" "}
         <small className="text-green-500">MY INBIO FEATURE</small>
-        <h3 className="text-2xl sm:text-3xl md:text-6xl font-bold">
-          Awesome <span className="text-green-500">Feature</span>
+        <h3 className="text-2xl sm:text-3xl gradient-text md:text-6xl font-bold mb-4">
+          Awesome <span className="">Feature</span>
         </h3>
       </div>
       {/* card div */}
